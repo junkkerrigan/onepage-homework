@@ -1,0 +1,57 @@
+.welcome {
+  @include sizes(100%, 100vh);
+  display: flex;
+  justify-content: center;
+
+  &-bg {
+
+    @include sizes(100%, 100%);
+
+
+    img {
+      @include sizes(100%, 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -2;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      @include sizes(100%, 100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-image: linear-gradient(rgba(43, 46, 74, 0.95) 0%, rgba(43, 46, 74, 0.95) 100%);
+    }
+  }
+
+  .container {
+    @include sizes(100%, 100%);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-title {
+    color: white;
+    font: 700 65px/65px "Open Sans";
+    text-transform: uppercase;
+  }
+
+  &-content {
+    color: white;
+    font: 400 22px/33px $font;
+    max-width: 910px;
+    margin: 30px 0 70px;
+  }
+
+  &-button {
+    @include make-button(50px, 15px);
+  }
+}

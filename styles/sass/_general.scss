@@ -1,0 +1,37 @@
+$xl: 1199px;
+$lg: 991px;
+$md: 767px;
+$sm: 575px;
+
+$font: Ralewey, Helvetica, Georgia, sans-serif;
+
+$orange: #e84545;
+$black: #2d3033;
+$grey: #6c7279;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+@mixin sizes($w, $h) {
+  height: $h;
+  width: $w;
+}
+
+@mixin make-button($px, $py) {
+  padding: $py $px;
+  color: white;
+  background-color: $orange;
+  border: none;
+  text-transform: uppercase;
+  font: 400 13px $font;
+
+  &:hover {
+    color: white;
+    background-color: $orange;
+    text-decoration: none;
+  }
+}
