@@ -1,0 +1,96 @@
+.features {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+
+  .container {
+    max-width: 1080px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-list {
+    @media (min-width: $lg) {
+      margin: 0 -45px;
+    }
+    margin: 0;
+  }
+
+  &-title {
+    color: $black;
+    font: 700 14px $font;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+  }
+
+  &-content {
+    font: 400 14px/21px $font;
+    color: $grey;
+    margin: 0;
+    max-width: 300px;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 75px;
+    @media (min-width: $lg) {
+      padding: 0 45px;
+    }
+
+    &.customize::before {
+      content: "";
+      background: url("../../img/customize.png");
+      width: 60px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &.responsive::before {
+      content: "";
+      background: url("../../img/responsive.png");
+      width: 73px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &.design::before {
+      content: "";
+      background: url("../../img/design.png");
+      width: 41px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &.clean::before {
+      content: "";
+      background: url("../../img/clean.png");
+      width: 56px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &.ship::before {
+      content: "";
+      background: url("../../img/ship.png");
+      width: 72px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+
+    &.download::before {
+      content: "";
+      background: url("../../img/download.png");
+      width: 79px;
+      height: 60px;
+      display: block;
+      margin-bottom: 35px;
+    }
+  }
+}
