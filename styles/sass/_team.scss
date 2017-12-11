@@ -1,0 +1,60 @@
+.team {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+
+  .container {
+    max-width: 1170px;
+    display: flex;
+    align-items: center;
+  }
+
+  &-list {
+    margin-bottom: 0;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  &-mate {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-name {
+      font: 400 22px $font;
+      color: $black;
+      margin: 30px 0 15px;
+    }
+
+    &-position {
+      color: $orange;
+      font: 400 13px $font;
+      text-transform: uppercase;
+    }
+
+    &-data {
+      color: $grey;
+      font: 400 14px/21px $font;
+      width: 265px;
+      margin: 30px 0;
+    }
+  }
+
+  .sns {
+    display: flex;
+    align-items: center;
+
+    &-item {
+      border: 1px solid #e8ecee;
+      padding: 12px 15px;
+      margin-right: 5px;
+    }
+
+    i {
+      color: #c6cacc;;
+    }
+  }
+}

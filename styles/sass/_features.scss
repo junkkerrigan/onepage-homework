@@ -27,7 +27,7 @@
     font: 400 14px/21px $font;
     color: $grey;
     margin: 0;
-    max-width: 300px;
+    width: 300px;
   }
 
   &-item {
@@ -38,6 +38,8 @@
     @media (min-width: $lg) {
       padding: 0 45px;
     }
+
+
 
     &.customize::before {
       content: "";
