@@ -1,0 +1,28 @@
+.load {
+  display: flex;
+  justify-content: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+  }
+
+  &-title {
+    font: 300 28px $font;
+    color: $black;
+  }
+
+  &-info {
+    font: 700 13px $font;
+    color: $black;
+    text-transform: uppercase;
+    margin: 15px 0 40px;
+  }
+
+  &-link {
+    @include make-button(80px, 15px);
+  }
+}

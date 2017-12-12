@@ -1,0 +1,54 @@
+.clients {
+
+  .review {
+    background-color: #53354a;
+    height: 500px;
+    padding: 115px 0 0 85px;
+
+    &-text {
+      color: white;
+      font: 36px/42px Cardo;
+      font-style: italic;
+      width: 500px;
+      margin-bottom: 30px;
+
+      &::before {
+        content: "“";
+        color: white;
+        font: 36px/42px Cardo;
+        font-style: italic;
+      }
+
+      &::after {
+        content: '”';
+        color: white;
+        font: 36px/42px Cardo;
+        font-style: italic;
+      }
+
+    }
+
+    &-author {
+      color: white;
+      font: 700 13px $font;
+      text-transform: uppercase;
+    }
+  }
+
+  .carousel-indicators li {
+    background-color: #755d6e;
+    &.active {
+      background-color: white;
+    }
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .carousel-indicators {
+    position: relative;
+    bottom: -430px;
+    transform: translate(200px);
+  }
+}
