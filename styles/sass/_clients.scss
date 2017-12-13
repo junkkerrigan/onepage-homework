@@ -3,12 +3,17 @@
   .review {
     background-color: #53354a;
     height: 500px;
-    padding: 115px 0 0 85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 
     &-text {
       color: white;
       font: 36px/42px Cardo;
       font-style: italic;
+
+      max-width: calc(100% - 60px);
       width: 500px;
       margin-bottom: 30px;
 
@@ -46,9 +51,24 @@
     margin-right: 10px;
   }
 
-  .carousel-indicators {
-    position: relative;
-    bottom: -430px;
-    transform: translate(200px);
+  @media (min-width: $lg) {
+    .carousel-indicators {
+      margin: 0;
+      left: 50%;
+      bottom: 100px;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .clients .row {
+    flex-direction: column!important;
+    img {
+      max-width: 100%!important;
+    }
+
+    .review {
+      max-width: 100% !important;
+    }
   }
 }
