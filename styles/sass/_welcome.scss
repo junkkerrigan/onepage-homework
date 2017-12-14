@@ -41,12 +41,20 @@
   &-title {
     color: white;
     font: 700 65px/65px "Open Sans";
+
+    @media (max-width: $md) {
+      font: 700 30px/33px "Open Sans";
+    }
     text-transform: uppercase;
+    max-width: 100%;
   }
 
   &-content {
     color: white;
     font: 400 22px/33px $font;
+    @media (max-width: $md) {
+      font: 400 18px/24px $font;
+    }
     max-width: 910px;
     margin: 30px 0 70px;
   }

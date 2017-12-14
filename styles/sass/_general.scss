@@ -16,6 +16,10 @@ $grey: #6c7279;
   list-style-type: none;
 }
 
+button, a {
+  cursor: pointer;
+}
+
 @mixin sizes($w, $h) {
   height: $h;
   width: $w;
